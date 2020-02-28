@@ -26,12 +26,12 @@ class Solution{
         if(intervals.size()<=1){
             return intervals;
         }
-        Collections.sort(intervals, (i1,i2)->Integer.compare(i1.start,i2.start)); //Intervalle nach start-Werten sortieren
+        Collections.sort(intervals, (i1,i2)->Integer.compare(i1.start,i2.start)); //Intervalle nach start-Werten sortieren (O(nlog(n)))
 
         List<Interval> result = new ArrayList<>();
         Interval current = intervals.get(0);
         result.add(current);
-        for(Interval inter: intervals){
+        for(Interval inter: intervals){    // (O(n))
             if(inter.start <= current.end) //Ueberlappende Intervalle, Ende wird angepasst
                 current.end= Math.max(current.end, inter.end);
             else{                          // Disjunkte Intervalle, Intervall wird zur ergebnis liste hinzugefuegt
