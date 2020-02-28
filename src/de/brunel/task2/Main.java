@@ -17,6 +17,9 @@ class Interval{
         this.start = start;
         this.end = end;
     }
+    public String toString(){
+        return "["+start+","+end+"]";
+    }
 }
 class Solution{
     public static List<Interval> merge(List<Interval> intervals){
@@ -48,9 +51,9 @@ public class Main {
         test.add(new Interval(14,23));
         test.add(new Interval(4,8));
 
-        List<Interval> mergedT2 = Solution.merge(test);
-        for(Interval inter: mergedT2){
-            System.out.print("["+inter.start+","+inter.end +"] ");
+        List<Interval> merged = Solution.merge(test);
+        for(Interval inter: merged){
+            System.out.print(inter.toString());
         }
     }
 }
