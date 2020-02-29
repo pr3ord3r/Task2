@@ -38,3 +38,4 @@ Nur die Ergebnisliste benötigt im worst case O(n) da die komplette Intervall Li
 ### Wie kann die Robustheit sichergestellt werden, vor allem auch mit Hinblick auf sehr große Eingaben ?
 - Sind mit sehr großen Eingaben große Zahlen gemeint, kann bei Überschreitung von Integer.max eine Exception geworfen werden.
 - Sind mit sehr großen Eingaben eine große Anzahl an Intervallen gemeint, könnte der Speicher überlaufen. Hier könnte man eine maximale Größe für die Eingabeliste angeben und vor der Ausführung überprüfen.
+- Außerdem kann durch Abfangen von fehlerhaften Eingaben oder Datentypen die Robustheit verbessert werden.

@@ -51,8 +51,22 @@ public class Main {
         test.add(new Interval(14,23));
         test.add(new Interval(4,8));
 
+        List<Interval> test2 = new ArrayList<>();
+        test2.add(new Interval(18,23));
+        test2.add(new Interval(3,10));
+        test2.add(new Interval(11,15));
+        test2.add(new Interval(5000,22800));
+        test2.add(new Interval(1,5));
+        test2.add(new Interval(1,5));
+        test2.add(new Interval(-10,-5));
+
         List<Interval> merged = Solution.merge(test);
+        List<Interval> merged2 = Solution.merge(test2);
         for(Interval inter: merged){
+            System.out.print(inter.toString());
+        }
+        System.out.println();
+        for(Interval inter: merged2){
             System.out.print(inter.toString());
         }
     }
