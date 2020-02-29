@@ -1,6 +1,6 @@
 # IntervalMerge
 
-##Aufgabe 
+## Aufgabe 
 
 Lösung zu Coding Task 2
 Implementieren Sie eine Funktion MERGE die eine Liste von Intervallen entgegennimmt und als
@@ -12,14 +12,14 @@ Beispiel: Input: [25,30] [2,19] [14, 23] [4,8]  Output: [2,23] [25,30]
 
 
 ## Überlegungen
-###Intervalle
+### Intervalle
 Wann überlappen sich zwei Intervalle i1 und i2.
 Dies ist der Fall, wenn fogende Bedingungen erfüllt sind.
 ```
 Bedingung 1: i1.end >= i2.start
 Bedingung 2: i1.start <= i2.end
 ```
-###Lösungsideen
+### Lösungsideen
 - Eine Brute-Force Lösung wäre, jedes Intervall auf Überlappung mit jedem anderen Intervall zu überprüfen. 
 Diese Herangehensweise ist allerdings nicht effizient und hätte eine Laufzeit von O(n^2) benötigt.
 
