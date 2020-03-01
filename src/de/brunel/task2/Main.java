@@ -34,7 +34,7 @@ class Solution{
         for(Interval inter: intervals){    // (O(n))
             if(inter.start <= current.end) //Ueberlappende Intervalle, Ende wird angepasst
                 current.end= Math.max(current.end, inter.end);
-            else{                          // Disjunkte Intervalle, Intervall wird zur ergebnis liste hinzugefuegt
+            else{                          // Disjunkte Intervalle, Intervall wird zur Ergebnisliste hinzugefuegt
                 current = inter;
                 result.add(current);
             }

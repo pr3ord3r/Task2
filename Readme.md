@@ -32,7 +32,7 @@ Findet eine Überlappung statt wird das Ende des ersten Intervalls angepasst, fi
 - Ergibt eine Gesamtlaufzeit von O(n log(n)).
 
 ## Speicherverbrauch
-Das sortieren der Liste findet in der Liste selbst statt, benötigt also keinen weiteren Speicher.
+Das Sortieren der Liste findet in der Liste selbst statt, benötigt also keinen weiteren Speicher.
 Nur die Ergebnisliste benötigt im worst case O(n) da die komplette Intervall Liste kopiert wird.
 
 ### Wie kann die Robustheit sichergestellt werden, vor allem auch mit Hinblick auf sehr große Eingaben ?
